@@ -1,0 +1,548 @@
+{
+	"pages": [{
+		"path": "pages/login/login",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "登录"
+		}
+	},{
+		"path": "pages/register/register",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "注册"
+		}
+	},{
+		"path": "pages/forget/forget",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "忘记密码"
+		}
+		},
+		{
+		"path": "pages/changepassword/changepassword",
+		"style": {
+		"navigationBarBackgroundColor": "#FFB296",
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "修改密码"
+			}
+		},
+		{
+		"path": "pages/center/center",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的"
+		}
+	},{
+		"path": "pages/user-info/userinfo",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "用户信息"
+		}
+	}
+		,{
+			"path": "pages/recharge/recharge",
+			"style": {
+				"navigationBarBackgroundColor": "#FFB296",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "充值"
+			}
+		}
+
+	,{
+		"path": "pages/baoxiu/list",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "报修展示"
+		}
+	},{
+		"path": "pages/baoxiu/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的报修"
+		}
+	},{
+		"path": "pages/baoxiu/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "报修添加/修改"
+		}
+	},{
+		"path": "pages/baoxiu/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "报修详情"
+		}
+	}
+	,{
+		"path": "pages/exampapertopic/list",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "试卷选题展示"
+		}
+	},{
+		"path": "pages/exampapertopic/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的试卷选题"
+		}
+	},{
+		"path": "pages/exampapertopic/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "试卷选题添加/修改"
+		}
+	},{
+		"path": "pages/exampapertopic/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "试卷选题详情"
+		}
+	}
+	,{
+		"path": "pages/fangke/list",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "访客展示"
+		}
+	},{
+		"path": "pages/fangke/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的访客"
+		}
+	},{
+		"path": "pages/fangke/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "访客添加/修改"
+		}
+	},{
+		"path": "pages/fangke/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "访客详情"
+		}
+	}
+	,{
+		"path": "pages/fangwu/list",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "公寓展示"
+		}
+	},{
+		"path": "pages/fangwu/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的公寓"
+		}
+	},{
+		"path": "pages/fangwu/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "公寓添加/修改"
+		}
+	},{
+		"path": "pages/fangwu/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "公寓详情"
+		}
+	}
+	,{
+		"path": "pages/fangwuCollection/list",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "公寓收藏展示"
+		}
+	},{
+		"path": "pages/fangwuCollection/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的公寓收藏"
+		}
+	},{
+		"path": "pages/fangwuCollection/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "公寓收藏添加/修改"
+		}
+	},{
+		"path": "pages/fangwuCollection/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "公寓收藏详情"
+		}
+	}
+	,{
+		"path": "pages/fangwuRuzhu/list",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "公寓学生展示"
+		}
+	},{
+		"path": "pages/fangwuRuzhu/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的公寓学生"
+		}
+	},{
+		"path": "pages/fangwuRuzhu/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "公寓学生添加/修改"
+		}
+	},{
+		"path": "pages/fangwuRuzhu/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "公寓学生详情"
+		}
+	}
+	,{
+		"path": "pages/fangwuTuisu/list",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "公寓退宿申请展示"
+		}
+	},{
+		"path": "pages/fangwuTuisu/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的公寓退宿申请"
+		}
+	},{
+		"path": "pages/fangwuTuisu/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "公寓退宿申请添加/修改"
+		}
+	},{
+		"path": "pages/fangwuTuisu/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "公寓退宿申请详情"
+		}
+	}
+	,{
+		"path": "pages/fangwuYuyue/list",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "公寓入住申请展示"
+		}
+	},{
+		"path": "pages/fangwuYuyue/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的公寓入住申请"
+		}
+	},{
+		"path": "pages/fangwuYuyue/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "公寓入住申请添加/修改"
+		}
+	},{
+		"path": "pages/fangwuYuyue/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "公寓入住申请详情"
+		}
+	}
+	,{
+		"path": "pages/jiaofei/list",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "缴费展示"
+		}
+	},{
+		"path": "pages/jiaofei/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的缴费"
+		}
+	},{
+		"path": "pages/jiaofei/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "缴费添加/修改"
+		}
+	},{
+		"path": "pages/jiaofei/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "缴费详情"
+		}
+	}
+	,{
+		"path": "pages/liuyan/list",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "留言展示"
+		}
+	},{
+		"path": "pages/liuyan/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的留言"
+		}
+	},{
+		"path": "pages/liuyan/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "留言添加/修改"
+		}
+	},{
+		"path": "pages/liuyan/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "留言详情"
+		}
+	}
+	,{
+		"path": "pages/susheguanliyuan/list",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "宿舍管理员展示"
+		}
+	},{
+		"path": "pages/susheguanliyuan/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的宿舍管理员"
+		}
+	},{
+		"path": "pages/susheguanliyuan/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "宿舍管理员添加/修改"
+		}
+	},{
+		"path": "pages/susheguanliyuan/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "宿舍管理员详情"
+		}
+	}
+	,{
+		"path": "pages/tiaosushenqing/list",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "调宿申请展示"
+		}
+	},{
+		"path": "pages/tiaosushenqing/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的调宿申请"
+		}
+	},{
+		"path": "pages/tiaosushenqing/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "调宿申请添加/修改"
+		}
+	},{
+		"path": "pages/tiaosushenqing/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "调宿申请详情"
+		}
+	}
+	,{
+		"path": "pages/weisheng/list",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "卫生展示"
+		}
+	},{
+		"path": "pages/weisheng/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的卫生"
+		}
+	},{
+		"path": "pages/weisheng/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "卫生添加/修改"
+		}
+	},{
+		"path": "pages/weisheng/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "卫生详情"
+		}
+	}
+	,{
+		"path": "pages/yonghu/list",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "学生展示"
+		}
+	},{
+		"path": "pages/yonghu/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的学生"
+		}
+	},{
+		"path": "pages/yonghu/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "学生添加/修改"
+		}
+	},{
+		"path": "pages/yonghu/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "学生详情"
+		}
+	}
+	,{
+		"path": "pages/exampaper/list",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "试卷列表"
+		}
+	},{
+		"path": "pages/exampaper/exam",
+		"style": {
+			"navigationStyle": "custom"
+		}
+	},{
+		"path": "pages/examrecord/list",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "考试记录"
+		}
+	},{
+		"path": "pages/examrecord/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "考试记录"
+		}
+	},{
+		"path": "pages/examrewrongquestion/list",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "错题本"
+		}
+	}
+			,{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarBackgroundColor": "#FFB296",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "高校宿舍信息管理系统小程序首页"
+		}
+	}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "高校宿舍信息管理系统小程序",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#FFFFFF",
+		"selectedColor": "#fff",
+		"borderStyle": "black",
+		"backgroundColor": "#5FAED0",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabs/index.png",
+				"selectedIconPath": "static/tabs/index1.png",
+				"text": "首页"
+			}
+			,{
+				"pagePath": "pages/exampaper/list",
+				"iconPath": "static/tabs/type.png",
+				"selectedIconPath": "static/tabs/type1.png",
+				"text": "试卷"
+			}
+			,{
+				"pagePath": "pages/fangwu/list",
+				"iconPath": "static/tabs/type.png",
+				"selectedIconPath": "static/tabs/type1.png",
+				"text": "公寓"
+			}
+			,{
+				"pagePath": "pages/center/center",
+				"iconPath": "static/tabs/mine.png",
+				"selectedIconPath": "static/tabs/mine1.png",
+				"text": "我的"
+			}
+		]
+	}
+	// "permission": {
+	// 	"scope.userLocation": {
+	// 		"desc": ""
+	// 	}
+	// },
+	// "requiredPrivateInfos": ["getLocation", "chooseLocation"]
+}

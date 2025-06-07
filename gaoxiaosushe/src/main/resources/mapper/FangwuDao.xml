@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.FangwuDao">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        a.id as id
+        ,a.susheguanliyuan_id as susheguanliyuanId
+        ,a.fangwu_name as fangwuName
+        ,a.fangwu_uuid_number as fangwuUuidNumber
+        ,a.fangwu_photo as fangwuPhoto
+        ,a.fangwu_address as fangwuAddress
+        ,a.fangwu_types as fangwuTypes
+        ,a.fangwu_new_money as fangwuNewMoney
+        ,a.sex_types as sexTypes
+        ,a.fangwu_renshu as fangwuRenshu
+        ,a.fangwu_yizhurenshu as fangwuYizhurenshu
+        ,a.fangwu_content as fangwuContent
+        ,a.shangxia_types as shangxiaTypes
+        ,a.fangwu_delete as fangwuDelete
+        ,a.insert_time as insertTime
+        ,a.create_time as createTime
+    </sql>
+    <select id="selectListView" parameterType="map" resultType="com.entity.view.FangwuView" >
+        SELECT
+        <include refid="Base_Column_List" />
+        <!-- 级联表的字段 -->
+        ,susheguanliyuan.susheguanliyuan_uuid_number as susheguanliyuanUuidNumber
+        ,susheguanliyuan.susheguanliyuan_name as susheguanliyuanName
+        ,susheguanliyuan.susheguanliyuan_phone as susheguanliyuanPhone
+        ,susheguanliyuan.susheguanliyuan_id_number as susheguanliyuanIdNumber
+        ,susheguanliyuan.susheguanliyuan_photo as susheguanliyuanPhoto
+        ,susheguanliyuan.susheguanliyuan_email as susheguanliyuanEmail
+        ,susheguanliyuan.jinyong_types as jinyongTypes
+
+        FROM fangwu  a
+        left JOIN susheguanliyuan susheguanliyuan ON a.susheguanliyuan_id = susheguanliyuan.id
+
+        <where>
+            <if test="params.ids != null">
+                and a.id in
+                <foreach item="item" index="index" collection="params.ids" open="(" separator="," close=")">
+                #{item}
+                </foreach>
+            </if>
+            <if test="params.susheguanliyuanId != null and params.susheguanliyuanId != ''">
+                and (
+                    a.susheguanliyuan_id = #{params.susheguanliyuanId}
+                )
+            </if>
+            <if test=" params.fangwuName != '' and params.fangwuName != null and params.fangwuName != 'null' ">
+                and a.fangwu_name like CONCAT('%',#{params.fangwuName},'%')
+            </if>
+            <if test=" params.fangwuUuidNumber != '' and params.fangwuUuidNumber != null and params.fangwuUuidNumber != 'null' ">
+                and a.fangwu_uuid_number like CONCAT('%',#{params.fangwuUuidNumber},'%')
+            </if>
+            <if test=" params.fangwuAddress != '' and params.fangwuAddress != null and params.fangwuAddress != 'null' ">
+                and a.fangwu_address like CONCAT('%',#{params.fangwuAddress},'%')
+            </if>
+            <if test="params.fangwuTypes != null and params.fangwuTypes != ''">
+                and a.fangwu_types = #{params.fangwuTypes}
+            </if>
+            <if test="params.fangwuNewMoneyStart != null ">
+                <![CDATA[  and a.fangwu_new_money >= #{params.fangwuNewMoneyStart}   ]]>
+            </if>
+            <if test="params.fangwuNewMoneyEnd != null ">
+                <![CDATA[  and a.fangwu_new_money <= #{params.fangwuNewMoneyEnd}   ]]>
+            </if>
+            <if test="params.fangwuNewMoney != null and params.fangwuNewMoney != ''">
+                and a.fangwu_new_money = #{params.fangwuNewMoney}
+            </if>
+            <if test="params.sexTypes != null and params.sexTypes != ''">
+                and a.sex_types = #{params.sexTypes}
+            </if>
+            <if test="params.fangwuRenshuStart != null and params.fangwuRenshuStart != ''">
+                <![CDATA[  and a.fangwu_renshu >= #{params.fangwuRenshuStart}   ]]>
+            </if>
+            <if test="params.fangwuRenshuEnd != null and params.fangwuRenshuEnd != ''">
+                <![CDATA[  and a.fangwu_renshu <= #{params.fangwuRenshuEnd}   ]]>
+            </if>
+             <if test="params.fangwuRenshu != null and params.fangwuRenshu != ''">
+                and a.fangwu_renshu = #{params.fangwuRenshu}
+             </if>
+            <if test="params.fangwuYizhurenshuStart != null and params.fangwuYizhurenshuStart != ''">
+                <![CDATA[  and a.fangwu_yizhurenshu >= #{params.fangwuYizhurenshuStart}   ]]>
+            </if>
+            <if test="params.fangwuYizhurenshuEnd != null and params.fangwuYizhurenshuEnd != ''">
+                <![CDATA[  and a.fangwu_yizhurenshu <= #{params.fangwuYizhurenshuEnd}   ]]>
+            </if>
+             <if test="params.fangwuYizhurenshu != null and params.fangwuYizhurenshu != ''">
+                and a.fangwu_yizhurenshu = #{params.fangwuYizhurenshu}
+             </if>
+            <if test=" params.fangwuContent != '' and params.fangwuContent != null and params.fangwuContent != 'null' ">
+                and a.fangwu_content like CONCAT('%',#{params.fangwuContent},'%')
+            </if>
+            <if test="params.shangxiaTypes != null and params.shangxiaTypes != ''">
+                and a.shangxia_types = #{params.shangxiaTypes}
+            </if>
+            <if test="params.fangwuDeleteStart != null and params.fangwuDeleteStart != ''">
+                <![CDATA[  and a.fangwu_delete >= #{params.fangwuDeleteStart}   ]]>
+            </if>
+            <if test="params.fangwuDeleteEnd != null and params.fangwuDeleteEnd != ''">
+                <![CDATA[  and a.fangwu_delete <= #{params.fangwuDeleteEnd}   ]]>
+            </if>
+             <if test="params.fangwuDelete != null and params.fangwuDelete != ''">
+                and a.fangwu_delete = #{params.fangwuDelete}
+             </if>
+            <if test=" params.insertTimeStart != '' and params.insertTimeStart != null ">
+                <![CDATA[  and UNIX_TIMESTAMP(a.insert_time) >= UNIX_TIMESTAMP(#{params.insertTimeStart}) ]]>
+            </if>
+            <if test=" params.insertTimeEnd != '' and params.insertTimeEnd != null ">
+                <![CDATA[  and UNIX_TIMESTAMP(a.insert_time) <= UNIX_TIMESTAMP(#{params.insertTimeEnd}) ]]>
+            </if>
+            <if test="params.insertTime != null and params.insertTime != ''">
+                and a.insert_time = #{params.insertTime}
+            </if>
+
+                <!-- 判断宿舍管理员的id不为空 -->
+            <if test=" params.susheguanliyuanIdNotNull != '' and params.susheguanliyuanIdNotNull != null and params.susheguanliyuanIdNotNull != 'null' ">
+                and a.susheguanliyuan_id IS NOT NULL
+            </if>
+            <if test=" params.susheguanliyuanUuidNumber != '' and params.susheguanliyuanUuidNumber != null and params.susheguanliyuanUuidNumber != 'null' ">
+                and susheguanliyuan.susheguanliyuan_uuid_number like CONCAT('%',#{params.susheguanliyuanUuidNumber},'%')
+            </if>
+            <if test=" params.susheguanliyuanName != '' and params.susheguanliyuanName != null and params.susheguanliyuanName != 'null' ">
+                and susheguanliyuan.susheguanliyuan_name like CONCAT('%',#{params.susheguanliyuanName},'%')
+            </if>
+            <if test=" params.susheguanliyuanPhone != '' and params.susheguanliyuanPhone != null and params.susheguanliyuanPhone != 'null' ">
+                and susheguanliyuan.susheguanliyuan_phone like CONCAT('%',#{params.susheguanliyuanPhone},'%')
+            </if>
+            <if test=" params.susheguanliyuanIdNumber != '' and params.susheguanliyuanIdNumber != null and params.susheguanliyuanIdNumber != 'null' ">
+                and susheguanliyuan.susheguanliyuan_id_number like CONCAT('%',#{params.susheguanliyuanIdNumber},'%')
+            </if>
+            <if test=" params.susheguanliyuanEmail != '' and params.susheguanliyuanEmail != null and params.susheguanliyuanEmail != 'null' ">
+                and susheguanliyuan.susheguanliyuan_email like CONCAT('%',#{params.susheguanliyuanEmail},'%')
+            </if>
+            <if test="params.jinyongTypes != null  and params.jinyongTypes != ''">
+                and susheguanliyuan.jinyong_types = #{params.jinyongTypes}
+            </if>
+
+        </where>
+        order by a.${params.sort} ${params.order}
+    </select>
+
+</mapper>
